@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess my number</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="upperDiv">
-        <button class="again"><h2>Again!</h2></button>
+        <button class="again">
+            <h2>Again!</h2>
+        </button>
         <h2>Between 1 and 20</h2>
     </div>
 
@@ -23,11 +30,11 @@
     </div>
 
     <div class="mainContainer">
-        <div>
+        <div class="left">
             <input type="number" class="userInput">
-            <button class="checkButton">Check!</button>
+            <button class="checkButton"><h1>Check!</h1></button>
         </div>
-        <div>
+        <div class="right">
             <h2>Start Guessing...</h2>
             <h2>Score: <span class="score">20</span></h2>
             <h2>HighScore: <span class="highScore">0</span></h2>
@@ -41,4 +48,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

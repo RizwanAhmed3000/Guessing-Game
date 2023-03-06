@@ -20,6 +20,10 @@ function gameFunction() {
     }
 }
 
+// function resetGame(){
+//     gameFunction.reset();
+// }
+
 var userInput = document.querySelector(".userInput");
 
 var checkButton = document.querySelector('.checkButton');
@@ -30,10 +34,11 @@ var highScore = document.querySelector('.highScore');
 
 var numberShown = document.querySelector('.number')
 
-checkButton.addEventListener('click', gameFunction);
-
 var againButton = document.querySelector('.again');
 
+checkButton.addEventListener('click', gameFunction);
+
+// againButton.addEventListener('click', resetGame);
 
 
 
