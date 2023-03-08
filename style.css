@@ -64,3 +64,8 @@ body{
     font-family: 'VT323', monospace;
 
 }
+.userInput{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
