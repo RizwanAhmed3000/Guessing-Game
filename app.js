@@ -1,14 +1,14 @@
 function gameFunction() {
     if (score.textContent > 0) {
         var randomNumber = Math.round(Math.random() * 20);
-        console.log(randomNumber);
-        console.log(userInput.value);
-        console.log(score.textContent);
+        // console.log(randomNumber);
+        // console.log(userInput.value);
+        // console.log(score.textContent);
         numberShown.textContent = randomNumber;
         if (userInput.value == randomNumber) {
             alert('You won');
             score.textContent = +score.textContent + 1;
-            if(score.textContent > highScore.textContent){
+            if (score.textContent > highScore.textContent) {
                 highScore.textContent = score.textContent;
             }
         } else {
@@ -20,9 +20,9 @@ function gameFunction() {
     }
 }
 
-// function resetGame(){
-//     gameFunction.reset();
-// }
+function resetGame() {
+    location.reload();
+}
 
 var userInput = document.querySelector(".userInput");
 
@@ -38,7 +38,7 @@ var againButton = document.querySelector('.again');
 
 checkButton.addEventListener('click', gameFunction);
 
-// againButton.addEventListener('click', resetGame);
+againButton.addEventListener('click', resetGame);
 
 
 
@@ -49,7 +49,7 @@ checkButton.addEventListener('click', gameFunction);
 //     console.log(score.textContent);
 //     if(userInput.value == randomNumber){
 //         alert('You won');
-//         score.textContent = +score.textContent + 1; 
+//         score.textContent = +score.textContent + 1;
 //     }else{
 //         console.log('You lose');
 //         score.textContent = +score.textContent - 1;
