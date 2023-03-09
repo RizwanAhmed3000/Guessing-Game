@@ -1,6 +1,6 @@
 function gameFunction() {
     if (score.textContent > 0) {
-        // var randomNumber = Math.round(Math.random() * 20);
+        var randomNumber = Math.round(Math.random() * 20);
         // console.log(randomNumber);
         // console.log(userInput.value);
         // console.log(score.textContent);
@@ -90,7 +90,7 @@ body.addEventListener('keydown', ecapeKey);
 
 modalButton.addEventListener('click', removeHidden);
 
-var randomNumber = Math.round(Math.random() * 20);
+// var randomNumber = Math.round(Math.random() * 20);
 
 
 
