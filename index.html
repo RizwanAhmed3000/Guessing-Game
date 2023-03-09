@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,9 @@
         <button class="again">
             <h2 class="again">Again!</h2>
         </button>
+        <button class="rules modalButton">
+            <h2>How to play</h2>
+        </button>
         <h2>Between 1 and 20</h2>
     </div>
 
@@ -32,7 +35,13 @@
     <div class="mainContainer">
         <div class="left">
             <input type="number" class="userInput">
-            <button class="checkButton"><h1>Check!</h1></button>
+            <button class="checkButton">
+                <h1>Check!</h1>
+            </button>
+        </div>
+        <div class="center">
+            <h1 class="winText"></h1>
+            <!-- <h1 class="loseText hidden">You Lose</h1> -->
         </div>
         <div class="right">
             <h2>Start Guessing...</h2>
@@ -40,6 +49,19 @@
             <h2>HighScore: <span class="highScore">0</span></h2>
         </div>
     </div>
+    <div class="overlay hidden "></div>
+    <div class="modal  hidden">
+        <div class="flexBox">
+            <p class="modalText">Computer will generate the random number between 1 to 20. You have to guess that number
+                and enter it in the given box, if you lose it new number will be generated and your score will be
+                decresed, correct answer your score will increase. Once score is zero you loses and will have to try
+                again.</p>
+            <button class="close">
+                <h1>OK</h1>
+            </button>
+        </div>
+    </div>
+
 
 
 

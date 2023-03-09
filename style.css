@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'VT323', monospace;
+
 }
 
 body{
@@ -13,6 +15,8 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .upperDiv button{
     width: 150px;
@@ -22,7 +26,7 @@ body{
 }
 .heading h1{
     text-align: center;
-    font-size: 150px;
+    font-size: 80px;
     letter-spacing: 10px;
 }
 .mark{
@@ -40,11 +44,14 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 .mainContainer input{
     width: 100%;
     height: 100px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .mainContainer button{
     width: 100%;
@@ -59,6 +66,10 @@ body{
 .left{
     padding: 20px;
 }
+.center{
+    align-self: center;
+    font-size: 35px;
+}
 .checkButton{
     font-size: 20px;
     font-family: 'VT323', monospace;
@@ -68,4 +79,67 @@ body{
     background-color: black;
     color: white;
     border: 2px solid white;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.modal{
+    position: absolute;
+    width: 50%;
+    height: fit-content;
+    top: 10%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px double white;
+    font-size: 25px;
+    padding: 40px 20px; 
+    margin: 50px auto 0 auto;
+}
+.flexBox{
+    display: flex;
+    flex-direction: column;
+}
+.close{
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+
+    padding: 5px;
+    margin: 10px;
+}
+.hidden{
+    display: none;
+}
+
+
+
+@media(max-width: 1024px){
+    .right{
+        font-size: 25px;
+    }
+    .center{
+        font-size: 30px;
+    }
+    .modalText{
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px){
+    .mark{
+        font-size: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    .upperDiv{
+        padding: 2px;
+    }
 }
